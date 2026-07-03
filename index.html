@@ -2,20 +2,48 @@
 <html lang="el">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Χρονολόγιο Αντίστασης στη Λήθη</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: sans-serif;
+    background: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #000;
+    text-align: center;
   }
-  .wrap { text-align: center; padding: 1rem; }
-  .number { font-size: 120px; font-weight: 700; color: #fff; line-height: 1; letter-spacing: -2px; }
-  .label { font-size: 28px; color: #aaa; margin-top: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
-  .sub { font-size: 16px; color: #555; margin-top: 8px; letter-spacing: 0.05em; }
+  .wrap { padding: 2rem; }
+  .number {
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -4px;
+  }
+  .label {
+    font-size: 32px;
+    color: #666;
+    margin-top: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .sub {
+    font-size: 16px;
+    color: #444;
+    margin-top: 8px;
+    letter-spacing: 0.05em;
+  }
+  .message {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 60px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-weight: 500;
+  }
 </style>
 </head>
 <body>
@@ -23,6 +51,7 @@
   <div class="number" id="days"></div>
   <div class="label">μέρες</div>
   <div class="sub">από 7 Οκτωβρίου 2023</div>
+  <div class="message">Η γενοκτονία συνεχίζεται.</div>
 </div>
 <script>
   const start = new Date('2023-10-07');
